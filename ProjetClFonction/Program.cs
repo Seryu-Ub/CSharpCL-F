@@ -12,7 +12,6 @@ namespace Seryu
                 Console.Title = "SeryuApp | Réciproque du théorème de Pythagore";
                 Console.Clear();
 
-
                 Console.ForegroundColor = ConsoleColor.Magenta;
                 Console.WriteLine(@"/ Réciproque du théorème de Pythagore \");
                 Console.WriteLine();
