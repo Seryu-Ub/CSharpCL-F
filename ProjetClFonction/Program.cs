@@ -1,4 +1,5 @@
 using System;
+using System.Diagnostics;
 
 namespace Seryu
 {
@@ -48,7 +49,6 @@ namespace Seryu
                 }
 
                 Console.WriteLine(Environment.NewLine + "Ecrivez 'Retour' pour revenir au pannel principal" + Environment.NewLine);
-
                 Console.ForegroundColor = ConsoleColor.Magenta;
 
                 string up = Console.ReadLine();
@@ -89,9 +89,7 @@ namespace Seryu
                 resultat = (result1 + result2);
 
                 Console.WriteLine(Environment.NewLine + "Voici le resultat : Racine carré de " + resultat + Environment.NewLine);
-
                 Console.WriteLine(Environment.NewLine + "Ecrivez 'Retour' pour revenir au pannel principal" + Environment.NewLine);
-
                 Console.ForegroundColor = ConsoleColor.Magenta;
 
                 string up = Console.ReadLine();
@@ -103,6 +101,12 @@ namespace Seryu
 
                 Console.ReadKey();
             }
+
+            void Calculatrice()
+            {
+                Process.Start(@"D:\Téléchargements\repos\ProjetClFonction\ProjetClFonction\WpfCalculator.exe");
+            }
+
 
             void Moyenne()
             {
@@ -139,9 +143,7 @@ namespace Seryu
                 resultat = resultat / ns;
 
                 Console.WriteLine(Environment.NewLine + "La moyenne de toutes ces données est " + resultat + Environment.NewLine);
-
                 Console.WriteLine(Environment.NewLine + "Ecrivez 'Retour' pour revenir au pannel principal" + Environment.NewLine);
-
                 Console.ForegroundColor = ConsoleColor.Magenta;
 
                 string up = Console.ReadLine();
@@ -179,9 +181,7 @@ namespace Seryu
                 aire = (based1 * ha / 2);
 
                 Console.WriteLine(Environment.NewLine + "Voici l'aire du triangle " + aire + " cm carré" + Environment.NewLine);
-
                 Console.WriteLine(Environment.NewLine + "Ecrivez 'Retour' pour revenir au pannel principal" + Environment.NewLine);
-
                 Console.ForegroundColor = ConsoleColor.Magenta;
 
                 string up = Console.ReadLine();
@@ -225,9 +225,7 @@ namespace Seryu
                 aire = ((based1 + based2) * ha / 2);
 
                 Console.WriteLine(Environment.NewLine + "Voici l'aire du trapèze : " + aire + " cm carré" + Environment.NewLine);
-
                 Console.WriteLine(Environment.NewLine + "Ecrivez 'Retour' pour revenir au pannel principal" + Environment.NewLine);
-
                 Console.ForegroundColor = ConsoleColor.Magenta;
 
                 string up = Console.ReadLine();
@@ -243,7 +241,7 @@ namespace Seryu
 
             void Cercle()
             {
-                Console.Title = "SeryuApp | L'aire d'un cercle"; 
+                Console.Title = "SeryuApp | L'aire d'un cercle";
                 Console.Clear();
                 Console.ForegroundColor = ConsoleColor.Magenta;
                 Console.WriteLine(@"/ Calculer l'aire d'un cercle \");
@@ -265,9 +263,7 @@ namespace Seryu
                 aire = pi * (rayon * rayon);
 
                 Console.WriteLine(Environment.NewLine + "Voici l'aire du cercle : " + aire + Environment.NewLine);
-
                 Console.WriteLine(Environment.NewLine + "Ecrivez 'Retour' pour revenir au pannel principal" + Environment.NewLine);
-
                 Console.ForegroundColor = ConsoleColor.Magenta;
 
                 string up = Console.ReadLine();
@@ -305,9 +301,7 @@ namespace Seryu
                 aire = (cote1 * cote2 / 2);
 
                 Console.WriteLine(Environment.NewLine + "Voici l'aire du triangle rectangle " + aire + " cm carré" + Environment.NewLine);
-
                 Console.WriteLine(Environment.NewLine + "Ecrivez 'Retour' pour revenir au pannel principal" + Environment.NewLine);
-
                 Console.ForegroundColor = ConsoleColor.Magenta;
 
                 string up = Console.ReadLine();
@@ -345,9 +339,7 @@ namespace Seryu
                 aire = (based1 * ha);
 
                 Console.WriteLine(Environment.NewLine + "Voici l'aire d'un parallélogramme " + aire + " cm carré" + Environment.NewLine);
-
                 Console.WriteLine(Environment.NewLine + "Ecrivez 'Retour' pour revenir au pannel principal" + Environment.NewLine);
-
                 Console.ForegroundColor = ConsoleColor.Magenta;
 
                 string up = Console.ReadLine();
@@ -385,9 +377,7 @@ namespace Seryu
                 aire = (based1 * ha);
 
                 Console.WriteLine(Environment.NewLine + "Voici l'aire d'un rectangle " + aire + " cm carré" + Environment.NewLine);
-
                 Console.WriteLine(Environment.NewLine + "Ecrivez 'Retour' pour revenir au pannel principal" + Environment.NewLine);
-
                 Console.ForegroundColor = ConsoleColor.Magenta;
 
                 string up = Console.ReadLine();
@@ -457,6 +447,7 @@ namespace Seryu
             Console.WriteLine("| Etat du code : Open Source             |");
             Console.WriteLine("| Commande importante : Retour           |");
             Console.WriteLine("| 'Retour = Revenir au pannel principal' |");
+            Console.WriteLine("| 'Calculatrice = Ouvre la calculatrice' |");
             Console.WriteLine("| Commande spécial : Credit  / Secret    |");
             Console.WriteLine("|________________________________________|");
             Console.ResetColor();
@@ -468,7 +459,7 @@ namespace Seryu
             Console.WriteLine(@"| [ 4 ] Calculer l'aire d'un triangle                  [ 5 ] Calculer l'aire d'un trapèze      [ 6 ] Calculer l'aire d'un cercle |");
             Console.WriteLine(@"| [ 7 ] Calculer l'aire d'un triangle rectangle        [ 8 ] Calculer l'aire d'un parallélo... [ 9 ] Calculer l'aire d'un rect.. |");
             Console.WriteLine(@"|________________________________________________________________________________________________________________________________|");
-            Console.WriteLine(@"");
+            Console.WriteLine(Environment.NewLine + "Ecrivez 'Calculatrice' pour ouvrir celle-ci" + Environment.NewLine);
             Console.ResetColor();
 
             Console.ForegroundColor = ConsoleColor.Magenta;
@@ -518,6 +509,11 @@ namespace Seryu
             if (op == "9")
             {
                 Rectangle();
+            }
+
+            if (op == "Calculatrice")
+            {
+                Calculatrice();
             }
 
             if (op == "Credit")
@@ -572,7 +568,6 @@ namespace Seryu
                 Console.ResetColor();
 
                 Console.WriteLine(Environment.NewLine + "Si vous voulez jouer au petit jeu caché ecrivez 'Jouer'" + Environment.NewLine + "Ecrivez 'Retour' pour revenir au pannel principal" + Environment.NewLine);
-
                 Console.ForegroundColor = ConsoleColor.Magenta;
 
                 string up = Console.ReadLine();

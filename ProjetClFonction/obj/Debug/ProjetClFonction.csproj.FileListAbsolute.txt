@@ -5,3 +5,10 @@ D:\Téléchargements\repos\ProjetClFonction\ProjetClFonction\obj\Debug\ProjetClF
 D:\Téléchargements\repos\ProjetClFonction\ProjetClFonction\obj\Debug\ProjetClFonction.csproj.CoreCompileInputs.cache
 D:\Téléchargements\repos\ProjetClFonction\ProjetClFonction\obj\Debug\ProjetClFonction.exe
 D:\Téléchargements\repos\ProjetClFonction\ProjetClFonction\obj\Debug\ProjetClFonction.pdb
+C:\Users\tatsu\source\repos\ProjetClFonction\obj\Debug\ProjetClFonction.csprojAssemblyReference.cache
+C:\Users\tatsu\source\repos\ProjetClFonction\obj\Debug\ProjetClFonction.csproj.CoreCompileInputs.cache
+C:\Users\tatsu\source\repos\ProjetClFonction\obj\Debug\ProjetClFonction.exe
+C:\Users\tatsu\source\repos\ProjetClFonction\obj\Debug\ProjetClFonction.pdb
+C:\Users\tatsu\source\repos\ProjetClFonction\bin\Debug\ProjetClFonction.exe.config
+C:\Users\tatsu\source\repos\ProjetClFonction\bin\Debug\ProjetClFonction.exe
+C:\Users\tatsu\source\repos\ProjetClFonction\bin\Debug\ProjetClFonction.pdb
